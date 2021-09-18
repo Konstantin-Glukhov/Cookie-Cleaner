@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Remove Current Tab Cookies",
+  "description": "Removes cookies for the current tab domain and reloads. Provides include/exclude domain options.",
+  "version": "1.0",
+  "author": {
+    "email": "glukhov.k@gmail.com",
+    "name": "Konstantin Glukhov"
+  },
+  "permissions": ["cookies", "tabs", "activeTab", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Remove Current Tab Cookies"
+  },
+  "icons": { "16": "Cookie-16.png", "48": "Cookie-48.png" , "128": "Cookie-128.png" },
+  "options_page": "options.html"
+}
