@@ -1,15 +1,20 @@
 <!doctype html>
 <html>
   <head>
-  <link href="body.css" rel="stylesheet">
-  <link href="button.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
   </head>
 <body>
   <span id="header"></span>
   <div id="message"></div>
-  <button type="button" id="Yes" autofocus>Clear cookies for current tab</button>
-  <button type="button" id="reload" hidden>Reload Current Page</button>
-  <button type="button" id="No">Back to browsing</button>
+  <span id="hint">(Click domain to toggle selection)</span>
+  <div id="buttons">
+    <button id="Yes" hidden>Remove cookies for the selected domains</button>
+    <button id="whitelist" hidden>Permanently whitelist unselected domains</button>
+    <button id="reload" hidden>Reload Current Tab</button>
+    <button id="No" autofocus>Back to browsing</button>
+    <button id="options">Extention Options</a>
+  </div>
+  <div id="status">&#x2764;&#xfe0f;</div>  <!-- Scarlet heart -->
   <script type="module" src="popup.js"></script>
 </body>
 </html>

@@ -3,21 +3,17 @@
 
 <head>
   <title>My Test Extension Options</title>
-  <link href="body.css" rel="stylesheet">
-  <link href="button.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-  <h4>Always clear cookies for these domains</h4>
-  <textarea id="includeDomains" cols="25" rows="3" wrap="hard"></textarea>
-  <h4>Never clear cookies for these domains</h4>
-  <textarea id="excludeDomains" cols="25" rows="3" wrap="hard"></textarea>
-  <br />
-  <span id="status"></span>
+  <h4 style="color: forestgreen">Never clear cookies for these domains</h4>
+  <textarea id="excludeDomains"></textarea>
   <menu>
     <button id="save">Save</button>
     <button id="cancel" autofocus>Cancel</button>
   </menu>
+  <div id="status">&#x2764;&#xfe0f;</div>  <!-- Scarlet heart -->
 
   <script type="module" src="options.js"></script>
 </body>

@@ -1,19 +1,16 @@
 {
   "manifest_version": 3,
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "cookie@cleaner.app",
-      "strict_min_version": "42.0"
-    }
-  },
   "name": "Remove Current Tab Cookies",
-  "description": "Removes cookies for the current tab domain and reloads. Provides include/exclude domain options.",
-  "version": "1.0",
+  "description": "Remove cookies exclusively within the current tab top level domain. Whitelist functionality with regular expressions.",
+  "version": "1.6",
   "author": "Konstantin Glukhov",
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
   "permissions": [
     "cookies",
     "tabs",
-    "activeTab",
     "storage"
   ],
   "host_permissions": [
@@ -28,5 +25,10 @@
     "48": "Cookie-48.png",
     "128": "Cookie-128.png"
   },
-  "options_page": "options.html"
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "cookie@cleaner.app",
+      "strict_min_version": "42.0"
+    }
+  }
 }

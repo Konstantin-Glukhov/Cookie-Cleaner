@@ -1,0 +1,79 @@
+:focus {
+  outline: none;
+  box-shadow: 0px 0px 20px 5px rgb(129 212 250);
+}
+.highlight {
+  background: lightskyblue;
+  border-color: aquamarine;
+  font-weight: bold;
+  box-shadow: 0px 0px 20px 5px orange;
+}
+body {
+  font-size: 16px;
+  min-width: 224px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  resize: vertical;
+  overflow: auto;
+  box-shadow: inset 0px 0px 20px 0px cadetblue;
+  cursor: not-allowed;
+}
+#status {
+  visibility: visible;
+}
+#buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+li {
+  list-style: none;
+  cursor: default;
+}
+li.checkmark::before {
+  content: "\2714\0020";
+  color: green;
+}
+li:not(.checkmark)::before {
+  content: "\2714\0020";
+  visibility: hidden;
+}
+span {
+  color: blue;
+}
+div {
+  color: darkviolet;
+  font-size: 14px;
+  font-weight: normal;
+}
+button {
+  height: 36px;
+  margin: 5px;
+  white-space: nowrap;
+  background: lightblue;
+  border: ridge medium skyblue;
+  border-radius: 1em;
+  box-shadow: 0px 0px 20px 5px lightgrey;
+  cursor: pointer;
+}
+button:focus {
+  background: lightskyblue;
+  border-color: orange;
+}
+textarea {
+  width: 15em;
+  min-height: 4em;
+  word-wrap: normal;
+  border-radius: 1em;
+  box-shadow: 0px 0px 20px 5px lightgrey;
+}
+textarea:focus {
+  background: lightyellow;
+}
+menu {
+  padding-inline-start: 0;
+}
