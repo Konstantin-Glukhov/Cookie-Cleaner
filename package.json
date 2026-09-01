@@ -1,0 +1,22 @@
+{
+  "name": "cookie-cleaner",
+  "version": "1.1.0",
+  "description": "Remove Cookies for the current tab domain",
+  "main": "webpack.config.js",
+  "script-shell": "powershell",
+  "scripts": {
+    "prebuild": "mkdir -Force dst",
+    "static": "cp static/* dst/",
+    "build": "tsc",
+    "dist": "npm run build && npm run static",
+    "clean": "rm -ErrorAction SilentlyContinue -Force -Recurse dst"
+  },
+  "author": "Konstantin Glukhov",
+  "license": "ISC",
+  "dependencies": {
+    "undici-types": "^5.27.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.10.0"
+  }
+}

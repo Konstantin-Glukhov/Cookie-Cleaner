@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ES2022",
+    "pretty": true,
+    "strict": true,
+    "typeRoots": [
+      "/mnt/e/Opt/NodeJS/node_modules/@types",
+      "E:/Opt/NodeJS/node_modules/@types"
+    ],
+    "types": ["chrome"],
+    "rootDir": "./src",
+    "outDir": "./dst"
+  },
+  "include": ["src"]
+}
